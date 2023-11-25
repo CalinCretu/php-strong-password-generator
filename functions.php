@@ -9,7 +9,7 @@ function genera_password($lunghezza) {
     );
     $password = "";
     for ($i = 0; $i < $lunghezza; $i++) {   
-        $carattere = random_int(0, count($caratteri));
+        $carattere = random_int(0, count($caratteri) -1);
         $password .= $caratteri[$carattere];
     }
     return $password;
